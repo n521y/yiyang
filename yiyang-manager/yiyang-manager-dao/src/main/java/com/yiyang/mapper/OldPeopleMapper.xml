@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yiyang.mapper.OldPeopleMapper" >
+    <insert id="addOldPeople" parameterType="com.yiyang.pojo.OldPeople">
+         INSERT INTO oldpeople (oPid,comid,oPsex,oPpassword,oPName,oPtelephone,oPadress,oPage,oPbrith,oPssn,oPidcard,emailOldPeople,oPallergen,oPsugical,oPinjury,oPsyntrophus)
+             VALUES(#{oPid},#{comid},#{oPsex},#{oPpassword},#{oPName},#{oPtelephone},#{oPadress},#{oPage},#{oPbrith},#{oPssn},#{oPidcard},#{emailOldPeople},#{oPallergen},#{oPsugical},#{oPinjury},#{oPsyntrophus})
+
+    </insert>
+    <select id="getAll" resultType="com.yiyang.pojo.OldPeople">
+        SELECT * FROM oldpeople
+    </select>
+
+
+    <delete id="delete" parameterType="java.lang.Integer">
+
+        DELETE FROM oldpeople WHERE oPid=#{oPid}
+
+    </delete>
+
+    <update id="updateOldPeople" parameterType="com.yiyang.pojo.OldPeople">
+
+        UPDATE oldpeople SET
+                     comid=#{comid},
+                     oPsex=#{oPsex},
+                     oPpassword=#{oPpassword},
+                     oPName=#{oPName},
+                     oPtelephone=#{oPtelephone},
+                     oPadress=#{oPadress},
+                     oPage=#{oPage},
+                     oPbrith=#{oPbrith},
+                     oPssn=#{oPssn},
+                     oPidcard=#{oPidcard},
+                     emailOldPeople=#{emailOldPeople},
+                     oPallergen=#{oPallergen},
+                     oPsugical=#{oPsugical},
+                     oPinjury=#{oPinjury},
+                     oPsyntrophus=#{oPsyntrophus}
+        WHERE oPid=#{oPid}
+
+    </update>
+
+</mapper>
