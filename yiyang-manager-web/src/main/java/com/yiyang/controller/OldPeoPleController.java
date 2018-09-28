@@ -1,13 +1,8 @@
 package com.yiyang.controller;
 
-
-
-
-import com.alibaba.dubbo.common.json.JSON;
-import com.alibaba.dubbo.common.json.JSONArray;
-import com.alibaba.dubbo.common.json.ParseException;
 import com.taotao.common.utils.JsonUtils;
 import com.yiyang.common.pojo.BootstrapDataGridResult;
+import com.yiyang.common.pojo.ChartsResult;
 import com.yiyang.common.pojo.TaotaoResult;
 import com.yiyang.pojo.OldPeople;
 import com.yiyang.service.OldPeopleService;
@@ -16,10 +11,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.util.Map;
+
 
 
 @Controller
@@ -27,6 +22,8 @@ import java.util.Map;
 public class OldPeoPleController {
     @Autowired
     private OldPeopleService oldPeopleService;
+
+
 
     @RequestMapping("/add")
     @ResponseBody
@@ -69,6 +66,18 @@ public class OldPeoPleController {
         System.out.println("修改aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
         TaotaoResult result=oldPeopleService.deleteOldPeople(Integer.valueOf(oPid));
         return result;
+    }
+
+
+    @RequestMapping("/querryCharts")
+    @ResponseBody
+    public String  queerOldPeopleCharts( ){
+        System.out.println("查询aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+        JsonUtils jsonUtils=new JsonUtils();
+        ChartsResult result=oldPeopleService.quarryAllCharts();
+        String data = jsonUtils.objectToJson(result);
+        System.out.println(data);
+        return data;
     }
 
 

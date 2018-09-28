@@ -568,6 +568,7 @@
                                         <span class="help-block">Please enter a complex password</span>
                                     </div>
                                 </div>
+
                                 <div class="form-group">
                                     <label class="col-md-3 control-label" for="oPtelephone">电话：</label>
                                     <div class="col-md-9">
@@ -705,6 +706,7 @@
                             $('#comid').val(row.comid);
                             $('#oPName').val(row.oPName);
                             $('#oPpassword').val(row.oPpassword);
+                            $('#oPage').val(row.oPage);
                             $('#oPtelephone').val(row.oPtelephone);
                             $('#oPadress').val(row.oPadress);
                             $('#oPbrith').val(row.oPbrith);

@@ -39,4 +39,16 @@
 
     </update>
 
+
+
+    <select id="quarrySex" resultType="java.lang.String">
+           select oPsex from oldpeople group by oPsex
+
+    </select>
+
+    <select id="quarrySexCount" parameterType="java.lang.String" resultType="int">
+
+        select COUNT(*) as countFen from oldpeople where oPsex=#{sex}
+    </select>
+
 </mapper>

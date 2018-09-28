@@ -1,6 +1,7 @@
 package com.yiyang.service;
 
 import com.yiyang.common.pojo.BootstrapDataGridResult;
+import com.yiyang.common.pojo.ChartsResult;
 import com.yiyang.common.pojo.TaotaoResult;
 import com.yiyang.pojo.OldPeople;
 
@@ -13,5 +14,9 @@ public interface OldPeopleService {
     TaotaoResult deleteOldPeople(Integer oPid);
 
     TaotaoResult updateOldPeople(OldPeople oldPeople);
+
+    ChartsResult quarryAllCharts();
+
+
 
 }

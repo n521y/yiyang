@@ -4,6 +4,8 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.taotao.common.utils.IDUtils;
 import com.yiyang.common.pojo.BootstrapDataGridResult;
+import com.yiyang.common.pojo.CharReturn;
+import com.yiyang.common.pojo.ChartsResult;
 import com.yiyang.common.pojo.TaotaoResult;
 import com.yiyang.mapper.OldPeopleMapper;
 import com.yiyang.pojo.OldPeople;
@@ -11,6 +13,7 @@ import com.yiyang.service.OldPeopleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -57,4 +60,21 @@ public class OldPeopleServiceImpl implements OldPeopleService {
 
         return TaotaoResult.ok();
     }
+
+    @Override
+    public ChartsResult quarryAllCharts() {
+        ChartsResult result =new ChartsResult();
+        List<CharReturn>charlist=new ArrayList<>();
+        List<String> sexNames=oldPeopleMapper.quarrySex();
+        for(String list:sexNames){
+            CharReturn charReturn=new CharReturn();
+            charReturn.setNameFen(list);
+            charReturn.setCountFen(oldPeopleMapper.quarrySexCount(list));
+            charlist.add(charReturn);
+        }
+        result.setList(charlist);
+        return result;
+    }
+
+
 }

@@ -495,7 +495,7 @@
 										<div class="form-group">
 											<label class="col-md-3 control-label" for="oPName">姓名：</label>
 											<div class="col-md-9">
-												<input type="text" id="oPName" name="oPName" class="form-control" placeholder="Text">
+												<input type="text" id="oPName" name="oPName" class="form-control " placeholder="Text" >
 												<span class="help-block"></span>
 											</div>
 										</div>
@@ -519,6 +519,7 @@
 												<span class="help-block">Please enter a complex password</span>
 											</div>
 										</div>
+
 										<div class="form-group">
 											<label class="col-md-3 control-label" for="oPtelephone">电话：</label>
 											<div class="col-md-9">

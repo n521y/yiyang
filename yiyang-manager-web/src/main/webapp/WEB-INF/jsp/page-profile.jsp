@@ -242,7 +242,7 @@ pageEncoding="UTF-8"%>
 									</div>							
 								</li>	
 								<li>
-									<a href="page-profile.jsp"><i class="fa fa-user"></i> Profile</a>
+									<a href="http://localhost:8081/yiyang?page=page-profile"><i class="fa fa-user"></i> Profile</a>
 								</li>
 								<li>
 									<a href="#"><i class="fa fa-wrench"></i> Settings</a>
@@ -254,7 +254,7 @@ pageEncoding="UTF-8"%>
 									<a href="#"><i class="fa fa-file"></i> File</a>
 								</li>
 								<li>
-									<a href="page-login.jsp"><i class="fa fa-power-off"></i> Logout</a>
+									<a href="http://localhost:8081/yiyang?page=page-login"><i class="fa fa-power-off"></i> Logout</a>
 								</li>
 							</ul>
 						</div>						
@@ -302,7 +302,7 @@ pageEncoding="UTF-8"%>
 											<i class="fa fa-copy" aria-hidden="true"></i><span>Pages</span>
 										</a>
 										<ul class="nav nav-children">
-											<li><a href="page-profile.jsp"><span class="text"> Profile</span></a></li>
+											<li><a href="http://localhost:8081/yiyang?page=page-profile"><span class="text"> Profile</span></a></li>
 											<li><a href="page-activity.jsp"><span class="text"> Activity</span></a></li>
 											<li><a href="page-timeline.jsp"><span class="text"> Timeline</span></a></li>
 											<li><a href="page-invoice.jsp"><span class="text"> Invoice</span></a></li>
@@ -445,16 +445,16 @@ pageEncoding="UTF-8"%>
 							<ol class="breadcrumb visible-sm visible-md visible-lg">								
 								<li><a href="index.jsp"><i class="icon fa fa-home"></i>Home</a></li>
 								<li><a href="#"><i class="fa fa-file-text"></i>Pages</a></li>
-								<li class="active"><i class="fa fa-reddit"></i>Profile</li>
+								<li class="active"><i class="fa fa-reddit"></i>个人信息</li>
 							</ol>						
 						</div>
 						<div class="pull-right">
-							<h2>Profile</h2>
+							<h2>个人信息</h2>
 						</div>					
 					</div>
 					<!-- End Page Header -->
 					<div class="row profile">
-						<div class="col-lg-4 col-md-5 col-sm-5">
+						<div class="col-lg-12 col-md-5 col-sm-5">
 							<div class="panel">
 								<div class="panel-body">
 									<div class="text-left bk-bg-white bk-padding-top-40 bk-padding-bottom-10">
@@ -463,7 +463,7 @@ pageEncoding="UTF-8"%>
 												<div class="bk-avatar">
 													<img src="assets/img/avatar.jpg" alt="" class="img-circle bk-img-120 bk-border-light-gray bk-border-3x" />
 												</div>
-												<h4 class="bk-margin-top-10 bk-docs-font-weight-300">Jhon Smith</h4>
+												<h4 class="bk-margin-top-10 bk-docs-font-weight-300">牛亮艺</h4>
 											</div>
 											<hr class="bk-margin-off" />
 											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">														
@@ -600,295 +600,7 @@ pageEncoding="UTF-8"%>
 								</div>
 							</div>							
 						</div>
-						
-						<div class="col-lg-5 col-md-7 col-sm-7">
-							<div class="panel">
-								<div class="panel-body">
-									<div class="tabs tabs-warning">
-										<ul class="nav nav-tabs">
-											<li class="active">
-												<a href="#overview" data-toggle="tab">Overview</a>
-											</li>
-											<li>
-												<a href="#edit" data-toggle="tab">Edit</a>
-											</li>
-										</ul>
-										<div class="tab-content">
-											<div id="overview" class="tab-pane active">										
-												<div class="bk-bg-white bk-padding-top-10 bk-padding-bottom-10">
-													<h4>Update Status</h4>
-													<div class="bk-bg-white">
-														<form role="form" action="javascript:">                           
-															<input type="email" class="form-control" placeholder="What's on your mind?" />
-														</form>
-													</div>					  	
-													<div class="bk-bg-white bk-margin-15">
-														<div class="btn-group">
-															<button type="button" class="btn btn-link"><i class="fa fa-map-marker"></i></button>
-															<button type="button" class="btn btn-link"><i class="fa fa-camera"></i></button>
-															<button type="button" class="btn btn-link"><i class="fa fa-video-camera"></i></button>						
-														</div>									
-														<div class="pull-right">
-															<button type="button" class="btn btn-primary"><i class="fa fa-lightbulb-o"></i> Post</button>
-														</div>							
-													</div>
-												</div>
-												<h5>Timeline</h5>
-												<div class="timelineProfile timeline-profile">
-													<div class="timeline-body">
-														<div class="timeline-title">
-															<h5 class="text-uppercase">March 2015</h5>
-														</div>
-														<ol class="timeline-items">
-															<li>
-																<div class="timeline-box">
-																	<p class="text-muted">5 months ago.</p>
-																	<p>
-																		It's awesome when we find a good solution for our projects, Fire Admin is <span class="text-primary">#awesome</span>
-																	</p>
-																</div>
-															</li>
-															<li>
-																<div class="timeline-box">
-																	<p class="text-muted">5 months ago.</p>
-																	<p>
-																		What is your greatest projects for your Administrator?
-																	</p>
-																</div>
-															</li>
-															<li>
-																<div class="timeline-box">
-																	<p class="text-muted">5 months ago.</p>
-																	<p>
-																		Checkout! How cool is that!
-																	</p>
-																	<div class="img-timeline">
-																		<a class="img-thumbnail lightbox" href="assets/img/gallery/photo1.jpg" data-plugin-options='{ "type":"image" }'>
-																			<img class="img-responsive" width="215" src="assets/img/gallery/photo1.jpg">
-																			<span class="zoom">
-																				<i class="fa fa-search"></i>
-																			</span>
-																		</a>
-																	</div>
-																</div>
-															</li>
-														</ol>
-													</div>
-												</div>
-											</div>
-											<div id="edit" class="tab-pane updateProfile">
-												<form class="form-horizontal" method="get">
-													<div class="bk-bg-white bk-padding-top-10 bk-padding-bottom-10">
-														<h4>Personal Information</h4>
-														<fieldset>
-															<div class="form-group">
-																<label for="profileFirstName">First Name</label>
-																<input type="text" class="form-control" id="profileFirstName" placeholder="Enter your first name" />
-															</div>
-															<div class="form-group">
-																<label for="profileLastName">Last Name</label>
-																<input type="text" class="form-control" id="profileLastName" placeholder="Enter your last name" />
-															</div>
-															<div class="form-group">
-																<label for="profileAddress">Address</label>
-																<input type="text" class="form-control" id="profileAddress" placeholder="Enter your address" />
-															</div>
-															<div class="form-group">
-																<label for="profileCompany">Company</label>
-																<input type="text" class="form-control" id="profileCompany" placeholder="Enter your company name" />
-															</div>
-														</fieldset>
-														<hr />
-														<h4>About Yourself</h4>
-														<fieldset>
-															<div class="form-group">
-																<label for="profileBio">Biographical Info</label>
-																<textarea class="form-control" rows="5" id="profileBio" placeholder="Start typing"></textarea>
-															</div>
-															<div class="form-group">
-																<div class="checkbox-custom checkbox-default bk-margin-bottom-10">
-																	<input type="checkbox" id="profilePublish" name="profilePublish" value="profilePublish"/>
-																	<label for="profilePublish"> Publish</label>
-																</div>
-															</div>
-														</fieldset>
-														<hr />
-														<h4>Change Password</h4>
-														<fieldset>
-															<div class="form-group">
-																<label for="profileNewPassword">New Password</label>
-																<input type="text" class="form-control" id="profileNewPassword" placeholder="Type New Password" />														
-															</div>
-															<div class="form-group">
-																<label for="profileNewPasswordRepeat">Repeat New Password</label>														
-																<input type="text" class="form-control" id="profileNewPasswordRepeat" placeholder="Retype New Password" />														
-															</div>
-														</fieldset>
-														<div class="bk-bg-white">
-															<div class="row">
-																<div class="col-md-12">
-																<div class="pull-right">
-																	<button type="submit" class="btn btn-primary">Submit</button>
-																	<button type="reset" class="btn btn-default">Reset</button>											
-																</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</form>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-12">
-							<h4>Weekly Stats</h4>
-							<div class="panel bk-widget bk-border-off">
-								<div class="panel-body bk-bg-very-light-gray">
-									<div class="row bk-fg-gray">
-										<div class="col-lg-5 col-md-6 col-sm-6 col-xs-6">
-											<h3 class="bk-margin-off bk-docs-font-weight-300 bk-fg-primary">$ 25,232</h3>
-											EARNINGS
-										</div>
-										<div class="col-lg-7 col-md-6 col-sm-6 col-xs-6">
-											<div class="small-chart-wrapper bk-padding-right-40">
-												<div class="small-chart" id="sparklineLineEarnings"></div>
-												<script type="text/javascript">
-													var sparklineLineEarningsData = [15, 16, 17, 19, 15, 25, 23, 35, 29, 15, 30, 45];
-												</script>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="panel bk-widget bk-border-off">
-								<div class="panel-body bk-bg-very-light-gray">
-									<div class="row bk-fg-gray">
-										<div class="col-lg-5 col-md-6 col-sm-6 col-xs-6">
-											<h3 class="bk-margin-off bk-docs-font-weight-300 bk-fg-primary">598</h3>
-											SALE ITEMS
-										</div>
-										<div class="col-lg-7 col-md-6 col-sm-6 col-xs-6">
-											<div class="small-chart-wrapper bk-padding-right-40">
-												<div class="small-chart" id="sparklineLineSale"></div>
-												<script type="text/javascript">
-													var sparklineLineSaleData = [20, 30, 15, 40, 30, 45, 60, 40, 50, 32, 65, 70];
-												</script>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="panel bk-widget bk-border-off">
-								<div class="panel-body bk-bg-very-light-gray">
-									<div class="row bk-fg-gray">
-										<div class="col-lg-5 col-md-6 col-sm-6 col-xs-6">
-											<h3 class="bk-margin-off bk-docs-font-weight-300 bk-fg-primary">1,958</h3>
-											DOWNLOAD
-										</div>
-										<div class="col-lg-7 col-md-6 col-sm-6 col-xs-6">
-											<div class="small-chart-wrapper bk-padding-right-40">
-												<div class="small-chart" id="sparklineLineDownload"></div>
-												<script type="text/javascript">
-													var sparklineLineDownloadData = [19, 5, 25, 40, 35, 90, 60, 70, 30, 15, 80, 90];
-												</script>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading bk-bg-white">									
-									<h6><span class="label label-danger bk-margin-5">165</span>Friends</h6>
-									<div class="panel-actions">
-										<a href="#" class="btn-minimize"><i class="fa fa-caret-up"></i></a>
-										<a href="#" class="btn-close"><i class="fa fa-times"></i></a>
-									</div>
-								</div>
-								<div class="panel-body bk-noradius">									
-									<a class="bk-bg-white bk-padding-off-top bk-padding-off-bottom">
-										<div class="row">
-											<div class="col-xs-3 bk-vcenter text-center bk-padding-10">
-												<div class="bk-avatar">
-													<img src="assets/img/avatar1.jpg" alt="" class="img-circle bk-img-40 bk-border-primary bk-border-2x bk-border-darken">
-												</div>
-											</div>
-											<div class="col-xs-9 bk-vcenter">
-												<h5 class="bk-fg-primary bk-fg-darken bk-margin-off-bottom">John Doe</h5>
-												<p>
-													Nullam vitae arcu in leo molestie hendrerit at quis sem.
-												</p>
-											</div>
-										</div>
-									</a>
-									<hr class="bk-margin-off">
-									<a class="bk-bg-white bk-padding-off-top bk-padding-off-bottom">
-										<div class="row">
-											<div class="col-xs-3 bk-vcenter text-center bk-padding-10">
-												<div class="bk-avatar">
-													<img src="assets/img/avatar2.jpg" alt="" class="img-circle bk-img-40 bk-border-warning bk-border-2x bk-border-darken">
-												</div>
-											</div>
-											<div class="col-xs-9 bk-vcenter">
-												<h5 class="bk-fg-warning bk-fg-darken bk-margin-off-bottom">John Doe</h5>
-												<p>
-													Nunc vitae porttitor purus.
-												</p>
-											</div>
-										</div>
-									</a>
-									<hr class="bk-margin-off">
-									<a class="bk-bg-white bk-padding-off-top bk-padding-off-bottom">
-										<div class="row">
-											<div class="col-xs-3 bk-vcenter text-center bk-padding-10">
-												<div class="bk-avatar">
-													<img src="assets/img/avatar2.jpg" alt="" class="img-circle bk-img-40 bk-border-danger bk-border-2x bk-border-darken">
-												</div>
-											</div>
-											<div class="col-xs-9 bk-vcenter">
-												<h5 class="bk-fg-danger bk-fg-darken bk-margin-off-bottom">John Doe</h5>
-												<p>
-													Morbi interdum posuere ultricies. Aliquam sit amet neque nisi.
-												</p>
-											</div>
-										</div>
-									</a>
-									<hr class="bk-margin-off">									
-								</div>
-								<div class="panel-footer bk-bg-white">
-									<div class="bk-padding-top-5 bk-padding-bottom-5 ">
-										<div class="row">
-											<div class="col-xs-6">
-												<a href="#" class="bk-fg-textcolor"><small><i class="fa fa-angle-left"></i> PREVIOUS</small></a>
-											</div>
-											<div class="col-xs-6 text-right">
-												<a href="#" class="bk-fg-textcolor"><small>NEXT <i class="fa fa-angle-right"></i></small></a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<h4>Last Projects</h4>
-							<ul class="bulletList">
-								<li class="red">
-									<span class="title">Fire Admin Template</span>
-									<span class="description truncate">Lorem ipsom dolor sit.</span>
-								</li>
-								<li class="green">
-									<span class="title">HTML5 Template</span>
-									<span class="description truncate">Lorem ipsom dolor sit amet</span>
-								</li>
-								<li class="blue">
-									<span class="title">HTML5 Template</span>
-									<span class="description truncate">Lorem ipsom dolor sit.</span>
-								</li>
-								<li class="orange">
-									<span class="title">Template</span>
-									<span class="description truncate">Lorem ipsom dolor sit.</span>
-								</li>
-							</ul>
-						</div>
+
 					</div>				
 				</div>
 				<!-- End Main Page -->		
